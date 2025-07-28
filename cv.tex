@@ -1,32 +1,9 @@
-%-----------------------------------------------------------------------------------------------------------------------------------------------%
-%	The MIT License (MIT)
-%
-%	Copyright (c) 2021 Jitin Nair
-%
-%	Permission is hereby granted, free of charge, to any person obtaining a copy
-%	of this software and associated documentation files (the "Software"), to deal
-%	in the Software without restriction, including without limitation the rights
-%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-%	copies of the Software, and to permit persons to whom the Software is
-%	furnished to do so, subject to the following conditions:
-%	
-%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-%	THE SOFTWARE.
-%	
-%
-%-----------------------------------------------------------------------------------------------------------------------------------------------%
-
 %----------------------------------------------------------------------------------------
 %	DOCUMENT DEFINITION
 %----------------------------------------------------------------------------------------
 
 % article class because we want to fully customize the page and not use a cv template
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,10pt]{article}
 
 %----------------------------------------------------------------------------------------
 %	FONT
@@ -67,7 +44,7 @@
 
 %to prevent spillover of tabular into next pages
 \usepackage{supertabular}
-\usepackage{tabularx}
+% \usepackage{tabularx}
 \newlength{\fullcollw}
 \setlength{\fullcollw}{0.47\textwidth}
 
@@ -121,7 +98,8 @@
     \end{minipage}    
     }
 
-
+% optional 
+% \clearpage
 
 %----------------------------------------------------------------------------------------
 %	BEGIN DOCUMENT
@@ -142,74 +120,164 @@
 % \end{tabularx}
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Your Name} \\[7.5pt]
-\href{https://github.com/username}{\raisebox{-0.05\height}\faGithub\ username} \ $|$ \ 
-\href{https://linkedin.com/in/username}{\raisebox{-0.05\height}\faLinkedin\ username} \ $|$ \ 
-\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
-\href{mailto:email@mysite.com}{\raisebox{-0.05\height}\faEnvelope \ email@mysite.com} \ $|$ \ 
-\href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +00.00.000.000} \\
+
+    \Huge{Gaurav Gorane} \\[14pt]
+    \href{https://github.com/gauravgorane}{\raisebox{-0.05\height}\faGithub\ gauravgorane} \ $|$ \ 
+    \href{https://linkedin.com/in/gauravgorane/}{\raisebox{-0.05\height}\faLinkedin\ gauravgorane} \ $|$ \ 
+    \href{https://gauravgorane.github.io/}{\raisebox{-0.05\height}\faGlobe \ gauravgorane.github.io} \ $|$ \ 
+    \href{mailto:gauravvg11@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ gauravvg11@gmail.com} \ $|$ \ 
+    \href{tel:+918862028027}{\raisebox{-0.05\height}\faMobile \ +91 8862-0280-27} \\
+    
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
-% EXPERIENCE SECTIONS
+% Summary
 %----------------------------------------------------------------------------------------
-
-%Interests/ Keywords/ Summary
 \section{Summary}
-This CV is automatically generated and deployed using the \href{https://github.com/jitinnair1/autoCV}{autoCV} template along with GitHub Actions such that a new version of the CV is compiled, published and ready for use when the cv.tex file is updated. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
+I’m a Computer Engineering student with a strong passion for Web Development. I enjoy creating engaging, and user-friendly digital experiences. My interests lie in building projects that solve real-world problems and improve how users interact with technology. I’m always eager to learn new tools and collaborate on solutions that make a meaningful impact.
 
-%Experience
-\section{Work Experience}
-
-\begin{jobshort}{Designation}{Jan 2021 - present}
-long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width
-\end{jobshort}
-
-
-\begin{joblong}{Designation}{Mar 2019 - Jan 2021}
-\item long long line of blah blah that will wrap when the table fills the column width
-\item again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
-\end{joblong}
-  
-%Projects
+%----------------------------------------------------------------------------------------
+% Projects
+%----------------------------------------------------------------------------------------
 \section{Projects}
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
-\end{tabularx}
+    % \textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
+    % \multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
+
+    \begin{joblong}
+        {\href{https://github.com/gauravgorane/Shopping_cart}{Shopping Cart \faExternalLink*} \normalfont{\textit{[JavaScript, Tailwind CSS, Firebase, PWA]}}}{June 2024}
+        \item Built a real-time shopping list app using Firebase Realtime Database for data storage and sync. 
+        \item Implemented add/delete functionality, accessibility fixes, and responsive design for mobile users.
+        \item Converted the web app into a Progressive Web App (PWA) with offline support and home screen installability.
+    \end{joblong}
+
+    \begin{joblong}
+        {\href{https://github.com/gauravgorane/React_mini_projects}{React Mini Projects \faExternalLink*} \normalfont{\textit{[React, React Hooks, Components]}}}{June 2024}
+        \item Built interactive mini apps (e.g., Meme Generator, Tenzies Game, ...) while learning modern React fundamentals.
+        \item Practiced JSX, props, state, event handling, side effects, controlled components, and accessibility.
+        \item Strengthened understanding of React architecture through hands-on capstone projects and challenge-based learning.
+    \end{joblong}
+
+    \begin{joblong}
+        {\href{https://github.com/gauravgorane/profile-map-app}{Profile Map App \faExternalLink*} \normalfont{\textit{[React, React Router, Leaflet, Tailwind CSS]}}}{June 2024}
+        \item Created an interactive map-based profile viewer app to visualize location data.
+        \item Used Leaflet.js to plot and interact with user data on maps.
+    \end{joblong}
+
+    \begin{joblong}
+        {\href{https://github.com/gauravgorane/Frontend_mentor_js}{Frontend Mentor JS \faExternalLink*} \normalfont{\textit{[JavaScript, DOM, Web Components]}}}{June 2024}
+        \item Built interactive solutions to JavaScript-focused challenges from Frontend Mentor.
+        \item Strengthened understanding of core JS concepts and DOM manipulation.
+    \end{joblong}
+
+    \begin{joblong}
+        {\href{https://github.com/gauravgorane/Frontend_Mentor}{Frontend Mentor Challenges \faExternalLink*} \normalfont{\textit{[HTML, CSS, Responsive Design]}}}{Aug 2024}
+        \item Solved 20+ real-world UI challenges focusing on responsive design and accessibility.
+        \item Improved skills in HTML, CSS (Flexbox \& Grid), and pixel-perfect layout implementation. 
+    \end{joblong}
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE
+%----------------------------------------------------------------------------------------
+\section{Experience}
+
+    % \begin{jobshort}{Designation}{Jan 2021 - present}
+    % long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width
+    % \end{jobshort}
+    
+    % \begin{joblong}{Designation}{Mar 2019 - Jan 2021}
+    %     \item long long line of blah blah that will wrap when the table fills the column width
+    %     \item again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
+    % \end{joblong}
+
+    \begin{joblong}{GDGoC WOW – Google Developer Group Community - \normalfont{\textit{Design Team Member}}}{Feb 2024 - Apr 2024}
+        \item Worked on website UI/UX design using Figma.
+        \item Designed standees, posters, and other promotional materials for community events.
+        \item Collaborated with the design team to maintain brand consistency across various assets.
+    \end{joblong}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}l X@{}}	
-2030 - present & PhD (Subject) at \textbf{University} \hfill \normalsize (GPA: 4.0/4.0) \\
 
-2023 - 2027 & Bachelor's Degree at \textbf{College} \hfill (GPA: 4.0/4.0) \\ 
+    % 2030 - present & PhD (Subject) at \textbf{University} \hfill \normalsize (GPA: 4.0/4.0) \\
+    % 2023 - 2027 & Bachelor's Degree at \textbf{College} \hfill (GPA: 4.0/4.0) \\ 
+    % 2022 & Class 12th Some Board \hfill  (Grades) \\
+    % 2021 & Class 10th Some Board \hfill  (Grades) \\
 
-2022 & Class 12th Some Board \hfill  (Grades) \\
+    \textbf{Dr. D. Y. Patil Institute of Technology, Pimpri, Pune - 18} & \hfill Sep 2021 - June 2025 \\ \vspace*{2mm}
+    B.E. Computer Engineering. 8.88 CGPA \\ 
+    
+    \textbf{Amrita Vidyalayam \& Junior College, Nigdi, Pune - 44} & \hfill Aug 2019 - June 2021 \\ \vspace*{2mm}
+    H.S.C. 86.67\% \\ 
+    
+    \textbf{M S S HighSchool, Chinchwad , Pune - 17} & \hfill May 2019 \\ \vspace*{2mm}
+    S.S.C. 91.60\% \\
 
-2021 & Class 10th Some Board \hfill  (Grades) \\
 \end{tabularx}
-
-%----------------------------------------------------------------------------------------
-%	PUBLICATIONS
-%----------------------------------------------------------------------------------------
-\section{Publications}
-\begin{refsection}[citations.bib]
-\nocite{*}
-\printbibliography[heading=none]
-\end{refsection}
 
 %----------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
-\section{Skills}
+\section{Technical Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
-Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\  
+\textbf{Languages} &  \normalsize{C, C++, Python, HTML, CSS, JavaScript}\\
+\textbf{Databases} &  \normalsize{MySQL, SQLite, MongoDB, Firestore}\\
+\textbf{Frameworks}  &  \normalsize{React, Bootstrap, Tkinter}\\
+\textbf{Tools}  &  \normalsize{Git, GitHub, Google Cloud Platform, Postman, Figma, Canva, LaTeX, Notion}\\
 \end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	VOLUNTEERING
+%----------------------------------------------------------------------------------------
+\section{Volunteering}
+
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+
+\textbf{Head of Operations, Google Developer Groups $|$ DPU-DIT} & \hfill 
+2024-25 \\ \vspace*{1mm}
+Organized zone-level tech events and secured major sponsorships, overseeing smooth execution. \\
+
+\textbf{Tech Editor, Google Developer Student Clubs DIT, Pune} & \hfill 
+2023-24 \\ \vspace*{1mm}
+Designed digital assets and collaborated across tech and non-tech teams for various initiatives. \\
+
+\textbf{Social Media Coordinator, National Service Scheme} & \hfill 
+2022-24 \\ \vspace*{1mm}
+Managed social media outreach and partnered with organizations to promote social causes. \\ 
+
+\textbf{Student Coordinator, Entrepreneurship Development and Start-up Innovation Cell} & \hfill 
+2022-23 \\ \vspace*{1mm}
+Led last-minute coordination with entrepreneurs to ensure impactful discussions and events. \\ 
+
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	CERTIFICATIONS
+%----------------------------------------------------------------------------------------
+\section{Certifications \& Achievements}
+
+\textbf{Copyright – A Distributed Architecture Quiz App} \\
+- Received a government-registered copyright for developing a distributed architecture-based quiz application. \\[1ex]
+\textbf{Responsive Web Design (freeCodeCamp)} \\
+- Learned fundamentals of Web Design and Development. \\[1ex]
+\textbf{JavaScript Algorithms \& Data Structures (freeCodeCamp)} \\
+- Completed a hands-on course covering core JavaScript concepts. \\[1ex]
+\textbf{Cisco Networking Basics} \\
+- Gained understanding of Computer Networks. \\[1ex]
+\textbf{Google Cloud 30 Days Challenge} \\
+- Explored various Google Cloud services and completed the Career Practitioner program. \\[1ex]
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+% \section{Publications}
+% \begin{refsection}[citations.bib]
+% \nocite{*}
+% \printbibliography[heading=none]
+% \end{refsection}
 
 \vfill
 \center{\footnotesize Last updated: \today}
